@@ -473,3 +473,36 @@ h1, h2, h3, h4, p {
     padding-left: 15px;
     padding-right: 15px;
   }
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-photo {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 260px;
+    height: auto;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        order: -1;
+    }
+}
