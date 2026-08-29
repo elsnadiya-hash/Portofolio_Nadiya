@@ -550,3 +550,21 @@ h1, h2, h3, h4, p {
     background: transparent !important;
     box-shadow: none !important;
 }
+.home-img {
+  flex: 0 0 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.home-img img {
+  width: 270px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid var(--accent);
+  box-shadow: none;
+}
