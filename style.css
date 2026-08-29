@@ -474,3 +474,10 @@ h1, h2, h3, h4, p {
     padding-right: 15px;
   }
 }
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+}
