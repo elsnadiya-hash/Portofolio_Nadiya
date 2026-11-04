@@ -645,3 +645,41 @@ h1, h2, h3, h4, p {
         gap: 12px;
     }
 }
+
+/* ===== FIX JARAK GALERI INTERNSHIP ===== */
+
+#resume .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+    width: auto !important;
+
+    box-sizing: border-box !important;
+}
+
+#resume .gallery-item {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    #resume .gallery {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* HP */
+@media (max-width: 500px) {
+    #resume .gallery {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        grid-template-columns: 1fr !important;
+    }
+}
