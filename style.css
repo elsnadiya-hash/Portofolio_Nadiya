@@ -610,3 +610,38 @@ h1, h2, h3, h4, p {
         min-width: 0;
     }
 }
+
+/* ===== MEMBERI JARAK GALERI INTERNSHIP DARI TEPI LAYAR ===== */
+
+.gallery {
+    width: calc(100% - 160px);
+    margin: 24px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.gallery-item {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .gallery {
+        width: calc(100% - 80px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+/* HP */
+@media (max-width: 500px) {
+    .gallery {
+        width: calc(100% - 30px);
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
